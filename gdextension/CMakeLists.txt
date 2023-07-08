@@ -11,4 +11,5 @@ add_library(yave SHARED
         src/register_types.h
         src/tests.h
 )
+target_compile_options(yave PRIVATE -Wl,--no-undefined -lm)
 target_link_libraries(yave godot::cpp)
