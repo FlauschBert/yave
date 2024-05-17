@@ -1,11 +1,11 @@
 [configuration]
 
 entry_symbol = "example_library_init"
-compatibility_minimum = 4.1
+compatibility_minimum = 4.2
 
 [libraries]
 
 windows.debug.x86_64 = "res://cmake-build-debug/gdextension/libyave.dll"
 windows.release.x86_64 = "res://cmake-build-release/gdextension/libyave.dll"
-linux.debug.x86_64 = "res://cmake-build-debug/gdextension/libyave.so"
-linux.release.x86_64 = "res://cmake-build-release/gdextension/libyave.so"
+linux.debug.x86_64 = "res://cmake-build-debug-clang/gdextension/libyave.so"
+linux.release.x86_64 = "res://cmake-build-release-clang/gdextension/libyave.so"
