@@ -11,5 +11,5 @@ add_library(yave SHARED
         src/register_types.h
         src/tests.h
 )
-target_link_libraries(yave godot::cpp)
+target_link_libraries(yave PRIVATE godot::cpp)
 target_link_options(yave PRIVATE -fno-rtti)
