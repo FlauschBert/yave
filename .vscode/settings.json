@@ -16,7 +16,7 @@
       "--completion-style=detailed",
       "--header-insertion=iwyu",
       "--suggest-missing-includes",
-      "--compile-commands-dir=${workspaceFolder}/cmake-build-Debug"
+      "--compile-commands-dir=${workspaceFolder}/cmake-build-Debug" // ${buildType} does not work :(
   ],
 
   "C_Cpp.errorSquiggles": "disabled",

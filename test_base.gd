@@ -56,4 +56,7 @@ func exit_with_status() -> void:
 		print_rich("[color=red] ******** FAILED ********[/color]")
 	print("")
 
+	# Wait for 250ms (0.25 seconds)
+	await get_tree().create_timer(0.25).timeout
+	
 	get_tree().quit(0 if success else 1)
