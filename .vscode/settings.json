@@ -1,0 +1,26 @@
+{
+  "git.smartCommitChanges": "tracked",
+  "git.suggestSmartCommit": false,
+  "cmake.buildDirectory": "${workspaceFolder}/cmake-build-${buildType}",
+  "cmake.generator": "Ninja",
+  "cmake.configureSettings": {
+      "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+  },
+  "cmake.preferredGenerators": [
+      "Ninja"
+  ],
+
+  "clangd.arguments": [
+      "--background-index",
+      "--clang-tidy",
+      "--completion-style=detailed",
+      "--header-insertion=iwyu",
+      "--suggest-missing-includes",
+      "--compile-commands-dir=${workspaceFolder}/cmake-build-Debug"
+  ],
+
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.autocomplete": "disabled",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "godotTools.editorPath.godot4": "/home/kutscheid/Downloads/Godot_v4.4-stable_linux.x86_64"
+}

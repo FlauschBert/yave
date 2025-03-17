@@ -13,3 +13,4 @@ add_library(yave SHARED
 )
 target_link_libraries(yave PRIVATE godot::cpp)
 target_link_options(yave PRIVATE -fno-rtti)
+target_compile_definitions(yave PRIVATE HOT_RELOAD_ENABLED)

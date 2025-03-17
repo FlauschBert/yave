@@ -1,6 +1,9 @@
 # GDextension Example
 ## git submodule
+### run the first time
+`git submodule update --init --recursive`
 ### update to new godot version
-- change the version in *.gitmodules*
-- delete the *godot-cpp* folder
-- run `git submodule update --init --recursive` in the repo root
+- make the changes in `.gitmodules`: change tag
+- get and merge the changes: `git submodule update --remote --merge`
+- add and commit the changes: `git add .gitmodules godot-cpp`
+- `git commit -m "Update godot-cpp submodule"`
